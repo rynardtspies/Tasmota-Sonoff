@@ -150,4 +150,17 @@ Change the OTA URL to: `http://ota.tasmota.com/tasmota/release/tasmota-lite.bin.
 
 When the upgrade completes, the browser should refresh and Tasmota 11.0.0 should be shown at the bottom!
 
+## Configure Tasmota to work correctly with the MINI (Toggle Switch)
+
+To get the physical toggle switch to work on the MINI:
+
+1. In Tasmota, click "Configure", then "Configure Other"
+2. In the `Template` field, paste the following line:
+
+```json
+{"NAME":"Sonoff MINIR2","GPIO":[17,0,0,0,9,0,0,0,21,157,0,0,0],"FLAG":0,"BASE":1}
+```
+3. Check "Activate"
+4. Click Save.
+
 You're done!
