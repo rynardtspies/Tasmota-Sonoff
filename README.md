@@ -2,7 +2,7 @@
 
 ## Getting the device on your Wifi network in DIY Mode
 
-1. Wire up a 220V live and neutral connection to the MINI and a standard UK plug.
+1. Wire up a 100-220V live and neutral connection to the MINI and a standard wall plug. DO NOT PLUG IT INTO THE WALL UNLESS IT'S PROPERLY WIRED AND SAFE WITH NO COPPER EXPOSED!!!
 2. Plug in into a mains socket and it will power on. The Blue LED will either  flash `. .` or `. . -`. If it's flashing `. . -`, skip to step 4.
 3. Hold down the button for 5 seconds. The blue LED should flash `. . -`
 4. Hold down the button for another 5 seconds. The blue LED will flash `. . . . . . . . . .` If it doesn't hold it down for a further 5 seconds
