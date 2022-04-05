@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "82035167-3639-4921-adda-8733b02e682a",
+		"name": "Sonoff MINI - Tasmota OTA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "OTA-FLASH",
+			"protocolProfileBehavior": {
+				"followRedirects": false
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"deviceid\": \"\",\r\n    \"data\": {\r\n        \"downloadUrl\": \"http://sonoff-ota.aelius.com/tasmota-latest-lite.bin\",\r\n        \"sha256sum\": \"5c1aecd2a19a49ae1bec0c863f69b83ef40812145c8392eebe5fd2677a6250cc\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{sonoff-ip}}9:8081/zeroconf/ota_flash",
+					"protocol": "http",
+					"host": [
+						"{{sonoff-ip}}9"
+					],
+					"port": "8081",
+					"path": [
+						"zeroconf",
+						"ota_flash"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SonoffMini-INFO",
+			"protocolProfileBehavior": {
+				"followRedirects": false
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"deviceid\": \"\",\r\n    \"data\": {}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{sonoff-ip}}:8081/zeroconf/info",
+					"protocol": "http",
+					"host": [
+						"{{sonoff-ip}}"
+					],
+					"port": "8081",
+					"path": [
+						"zeroconf",
+						"info"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SonoffMini-OTA_UNLOCK",
+			"protocolProfileBehavior": {
+				"followRedirects": false
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"deviceid\": \"\",\r\n    \"data\": {}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{sonoff-ip}}:8081/zeroconf/ota_unlock",
+					"protocol": "http",
+					"host": [
+						"{{sonoff-ip}}"
+					],
+					"port": "8081",
+					"path": [
+						"zeroconf",
+						"ota_unlock"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
