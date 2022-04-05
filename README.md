@@ -13,9 +13,12 @@
 9. Find the device IP for your local Wifi network on your Wifi router. It will be a hostname looking something like `ESP_XXXXXX`.
 
 
-## Unlock the device for OTA
+## Unlock the device for OTA using Postman
+For the flash section, I recommend you use Postman: (https://www.postman.com/)
 
-For this step, I have provided a Postman collection that you can import. The collection contains 3 API calls, as well as an `Postman Environment` that holds the IP address of the Sonoff Mini. **If you would like to use the collection, ensure that you have updated the IP address in the variable `sonoff-ip` to match your Sonoff Mini IP address on your Wifi network.**
+I have provided a Postman collection that you can import. There are two files, the collection file, and the environment file. You need to download both if you would like to use the collection.
+
+The collection contains 3 API calls, as well as a `Postman Environment` that holds the IP address of the Sonoff Mini. **If you would like to use the collection, ensure that you have updated the IP address in the variable `sonoff-ip` to match your Sonoff Mini IP address on your Wifi network.**
 
 1. Open Postman API client and issue the following API call to confirm that the MINI's API is listening on the network:
 
