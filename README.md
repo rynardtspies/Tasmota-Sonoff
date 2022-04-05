@@ -90,7 +90,7 @@ Now when we run the INFO API call again, we should see:
         "startup": "off",
         "pulse": "off",
         "pulseWidth": 500,
-        "ssid": "IoT-Net",
+        "ssid": "<YOUR NETWORK>",
         "otaUnlock": true,
         "fwVersion": "3.6.0",
         "deviceid": "1001405504",
